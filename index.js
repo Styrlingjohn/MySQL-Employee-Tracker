@@ -15,7 +15,7 @@ const db = mysql.createConnection(
     {
         host: '127.0.0.1',
         user: 'root',
-        password: 'Partyrock19!',
+        password: process.env.MYSQL_PASSWORD,
         database: 'professional_db'
     },
     console.log(`
